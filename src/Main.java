@@ -39,6 +39,14 @@ public class Main {
     }
     public static void task3(){
         System.out.println("Задание 3");
+        int[] arr = generateRandomArray();
+        double average;
+        int sum = 0;
+        for (int i : arr) {
+            sum = sum + i;
+        }
+        average = sum / arr.length;
+        System.out.printf("Средняя сумма трат за месяц составила %.2f рублей \n", average);
     }
     public static void task4(){
         System.out.println("Задание 4");
