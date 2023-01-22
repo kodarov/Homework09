@@ -23,6 +23,19 @@ public class Main {
         System.out.printf("Сумма трат за месяц составила %d рублей\n", sum);
     }
     public static void task2(){
+        System.out.println("Задание 2");
+        int[] arr = generateRandomArray();
+        int minExpense = arr[0];
+        int maxExpense = arr[0];
+        for (int i = 0; i < arr.length-1; i++) {
+            if (arr[i] > maxExpense) {
+                maxExpense = arr[i];
+            }
+            if (arr[i] < minExpense) {
+                minExpense = arr[i];
+            }
+        }
+        System.out.printf("Минимальная сумма трат за день составила %d рублей. Максимальная сумма трат за день составила %d рублей\n",minExpense, maxExpense);
     }
     public static void task3(){
         System.out.println("Задание 3");
